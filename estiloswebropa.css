@@ -1,0 +1,251 @@
+:root {
+    --title-font: 'Open Sans', sans-serif;
+    --body-font: 'Montserrat', Verdana;
+}
+
+html { /* Selector de etiqueta global o universal - Para modificar tamaños */
+    font-size: 16px; 
+}
+
+* { /* Selector Universal Siempre tenemos que ponerlo*/
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(52, 51, 51, 0.635); 
+    font-family:Calibri, Arial, Helvetica, sans-serif
+}
+
+nav {
+    padding: 1.5rem;
+    position: fixed;
+    top: 0;
+    width: 95vw;
+    backdrop-filter: blur(20px);
+    border-radius: 100px;
+}
+
+nav img {
+    border-radius: 50%
+}
+
+nav img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 20px var(--secondary-color-500);
+}
+
+.navbar-items {
+    gap: 2rem;
+    list-style: none;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+
+.flex-between-center {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-item a {
+    text-decoration: none;
+    color: inherit
+}
+
+
+.navbar-item:hover {
+    transform: scale(1.08);
+    text-shadow: 0 0 15px #fff;
+}
+
+button {
+    padding: 0.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.transition3seg {
+    transition: .3s;
+}
+
+.login-btn {
+    background-color: var(--secondary-color-500);
+    color: var(--neutral-white);
+}
+
+.register-btn {
+    background-color: transparent;
+    color: var(--secondary-color-500);
+    text-shadow: var(--primary-color-900);
+    border: solid 2px;
+    font-weight: bold;
+}
+
+.login-btn:hover, .register-btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 15px var(--secondary-color-500);
+}
+
+header {
+    height: 100vh;
+    background-image: url(/Reto_10/assets/img/IMAGEN\ PPL.jpg);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+header p {
+    font-size: 2rem
+}
+
+/* Títulos*/
+h1 {
+    text-align: center;
+    color: rgb(0, 0, 0);          /* letras verdes */
+    background-color: #ff9900; /* fondo verde clarito */
+    padding: 10px;
+    border-radius: 100px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(0, 0, 0);          /* letras verdes */
+    background-color: #ff9900; /* fondo verde clarito */
+    padding: 15px;
+    border-radius: 100px;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+header {
+  text-align: center;  /* centra el texto dentro del header */
+}
+
+/* Párrafos */
+p {
+    color: #000000;           
+    background-color: #fedd59; 
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/*imagenes ARTICULOS*/
+.circular {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 10px;
+
+}
+
+.centrado {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 100px;
+}
+
+.parrafo-footer {
+        background-color: #ff9900;
+}
+
+footer {
+    background-color: #ff9900;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+ul li {
+    font-weight: bold;
+}
+
+/* Sección general */
+#contacto {
+    max-width: 600px;         /* ancho máximo del formulario */
+    margin: 50px auto;        /* centrado en la página */
+    padding: 20px;
+    background: #f9f9f9;      /* fondo suave */
+    border-radius: 10px;      /* bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* sombra ligera */
+    font-family: Calibri, Arial, sans-serif;
+}
+
+/* Título */
+#contacto h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+/* Párrafo */
+#contacto p {
+    text-align: center;
+    margin-bottom: 1px;
+    color: #000000;
+}
+
+/* Formularios */
+#contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;  /* espacio entre los campos */
+}
+
+/* Labels */
+#contacto label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Inputs y textarea */
+#contacto input,
+#contacto textarea {
+    width: 0%;
+    padding:12px;
+    border:1px solid #fae195;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+/* Efecto al enfocar */
+#contacto input:focus,
+#contacto textarea:focus {
+    border-color: #f7df8b;
+    outline: none;
+}
+
+/* Botón */
+.contact-btn {
+    background: #ff0b0b;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Hover del botón */
+.contact-btn:hover {
+    background: #0841cc;
+}

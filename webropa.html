@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu ropa Online.</title>
+    <link rel="stylesheet" href="estiloswebropa.css">
+    <link rel="icon" href="./assets/css/LOGO.png" type="imagen/x-icon">
+
+</head>
+<body>
+
+    <header>
+        <h1 class="centrado">Mr. & Mrs.  CLOSET</h1>
+        <p  class="centrado" >Venta de ropa unisex Online.</p>
+
+        <nav class="d-flex flex-between-center">
+        <img class="navbar-logo transition3seg" src="./assets/img/LOGO_TIENDA.png" alt="Logo" width="50">
+        <ul class="navbar-items d-flex flex-center">
+            <li class="navbar-item transition3seg"><a href="#aritucilosHombre">HOMBRE</a></li>
+            <li class="navbar-item transition3seg"><a href="#aritucilosMujer">MUJER</a></li>
+            <li class="navbar-item transition3seg"><a href="#aritucilosNinios">NIÑOS</a></li>
+            <li class="navbar-item transition3seg"><a href="#aritucilosMascotas">MASCOTAS</a></li>
+        </ul>
+    
+        <div>
+            <button class="transition3seg login-btn">Iniciar Sesión</button>
+            <button class="transition3seg register-btn">Registrate</button>
+        </div>
+
+    </header>
+
+    <section>
+        <article>
+        <h2 class="centrado">🤍 🏷️ Nuestra Marca 🏷️ 🤍 </h2>
+        <p class="centrado">
+                Somos una marca de ropa reciclada que transforma materiales
+                en nuevas prendas con estilo, cuidando cada detalle para proteger
+                el medioambiente. Apostamos por la moda sostenible, 
+                el consumo responsable y la reducción de residuos, 
+                creando ropa moderna que respeta al planeta.
+            </p>
+        </article>
+    </section>
+
+    <section id="aritucilosHombre">
+        <article class="card">   
+            <img class="circular" src="./assets/img/ROPA_HOMBRE.jpg" alt="Ropa Hombre">
+                
+            <h2>💼Ropa masculina🥾</h2>
+            <p class="centrado">
+                <strong>Parte superior:</strong> poleras, camisas, chaquetas, polerones, abrigos.<br>
+                <strong>Parte inferior:</strong> jeans, pantalones, shorts.<br>
+                <strong>Accesorios:</strong> cinturones, gorros, bufandas, relojes.<br>
+                <strong>Calzado:</strong> zapatillas, zapatos, botas.
+            </p>
+        </article>
+    </section>
+
+    <section id="aritucilosMujer">
+        <article class="card">   
+            <img class="circular" src="./assets/img/ROPA_MUJER.jpg" alt="Ropa Mujer" width="100">
+                
+            <h2>💼Ropa femenina👠</h2>
+            <p class="centrado">
+                <strong>Parte superior:</strong> blusas, tops, poleras, chaquetas, abrigos.<br>
+                <strong>Parte inferior:</strong> pantalones, faldas, leggins, shorts.<br>
+                <strong>Vestidos y enterizos:</strong> casuales, de fiesta, de verano.<br>
+                <strong>Accesorios:</strong> carteras, joyas, pañuelos, sombreros.<br>
+                <strong>Calzado:</strong> tacos, botas, sandalias, zapatillas.<br>
+            </p>
+        </article>
+    </section>
+
+        <section id="aritucilosNinios">
+        <article class="card">   
+            <img class="circular" src="./assets/img/ROPA_NIÑOS.jpg" alt="Ropa Niños">
+                
+            <h2>🎠Ropa infantil🎠</h2>
+            <p class="centrado">
+                <strong>Niño:</strong> poleras, shorts, buzos, polerones.<br>
+                <strong>Niña:</strong> vestidos, poleras, leggins, faldas.<br>
+                <strong>Bebés:</strong> enteritos, bodies, chalecos, gorritos.<br>
+                <strong>Accesorios:</strong> mochilas, guantes, bufandas, zapatitos.<br>
+            </p>
+        </article>
+    </section>
+
+    <section id="aritucilosMascotas">
+        <article class="card">   
+            <img class="circular" src="./assets/img/ROPA_MASCOTAS.jpg" alt="Ropa Mascotas">
+                
+            <h2>🐶Mascotas🐱</h2>
+            <p class="centrado">
+                <strong>Perros:</strong> polerones, chalecos, impermeables.<br>
+                <strong>Gatos:</strong> poleritas, accesorios cómodos.<br>
+                <strong>Accesorios generales:</strong> correas, collares, camas, bandanas.<br>
+            </p>
+        </article>
+    </section>
+
+    <section id="contacto">
+
+        <h2>ATENCION AL CLIENTE</h2>
+
+        <p>Completa el siguiente formulario, te responderemos pronto:</p>    
+
+        <form>
+            <!-- Correo electronico -->
+            <label for="email">Correo electronico:</label><br>
+            <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required><br><br>
+                
+            <!-- Asunto -->
+            <label for="asunto">Asunto:</label><br>
+            <input type="text" id="asunto" name="asunto" placeholder="Escribe el asunto" required><br><br>
+                
+            <!-- Comentario -->
+            <label for="comentario">Comentario:</label><br>
+            <textarea id="comentario" name="comentario" rows="5" placeholder="Escribe tu mensaje..." required></textarea><br><br>
+            <button class="contact-btn">Enviar</button>                
+        </form>      
+
+    </section>
+
+    <footer>
+        <div>
+            <p class="parrafo-footer">
+                <strong>Contacto:</strong> Mr-and-Mrs.@ropaonlineus || +56 9 212-46917 <br>
+                <strong>Dirección:</strong> Av. DelaModa 212, Sanhattan - Chile<br>
+                2025 Reto N°10: HTML Y Estilos con CSS - Todos los derechos reservados
+            </p>
+        </div>        
+    </footer>
+
+</body>
+</html>
